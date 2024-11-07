@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h2 {
+  color: #444;
+  margin-top: 20px;
+}
+
+#drop-area {
+  border: 2px dashed #007bff;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 15px 0;
+  background-color: #e8e8e8;
+  color: #007bff;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+#drop-area:hover {
+  background-color: #d8ebff;
+}
+
+input[type="file"] {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 8px;
+  margin: 5px 0 10px;
+  border: 1px solid #a8a8a8;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 250px;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+}
+
+.file-list {
+  width: 100%;
+  max-width: 400px;
+  background-color: #e8e8e8;
+  padding: 15px;
+  border: 1px solid #a8a8a8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.file-list div {
+  padding: 10px;
+  border-bottom: 1px solid #a8a8a8;
+}
+
+.file-list div:last-child {
+  border-bottom: none;
+}
+
+/* .file-list div:nth-child(odd) {
+    background-color: #e8e8e8;
+  } */
+
+.file-list div:nth-child(even) {
+  background-color: #ecf5ff;
+}

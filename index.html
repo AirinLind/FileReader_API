@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Файловое Хранилище</title>
+  </head>
+  <body>
+    <h2>FileReader Api</h2>
+
+    <div id="drop-area">Перетащите файлы сюда или выберите ниже</div>
+
+    <input type="file" id="file-input" multiple />
+    <br />
+    <label for="filter-type">Фильтр по типу:</label>
+    <input type="text" id="filter-type" placeholder="Например, image/png" />
+    <br />
+    <label for="filter-size">Фильтр по размеру (в КБ):</label>
+    <input type="number" id="filter-size" placeholder="Размер в КБ" />
+
+    <div class="file-list" id="file-list"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
